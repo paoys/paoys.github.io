@@ -169,5 +169,10 @@ button:hover {
         margin-bottom: 50%;
         font-size: 2.3vw;
     }
+
+    body {
+        background-position: center;
+        background-color: black;
+    }
 }
 
