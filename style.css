@@ -7,6 +7,7 @@
 body {
     background-image: url(bg.png);
     background-repeat: no-repeat;
+    background-color: rgb(46, 46, 46);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -71,7 +72,7 @@ a {
     background-color: white;
 }
 
-.first-page {
+.first-page-about-us {
     color: white;
     text-align: center;
     margin-top: 200px;
@@ -105,7 +106,54 @@ button:hover {
     color: black;
 }
 
-@media screen and (max-width : 1285px) {
+.second-page-about-us {
+    color: white;
+    margin: 510px 100px 150px 100px;
+    padding: 20px;
+    justify-content: space-evenly;
+    
+    grid-template-columns: auto auto;
+    display: grid;
+    /* overflow: hidden; */
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.second-page-about-us h5 {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.second-page-about-us h1 {
+    font-size: 50px;
+}
+
+.second-page-about-us p {
+    margin-top: 15px;
+}
+
+.second-page-about-us img {
+    width: 500px;
+    filter: grayscale();
+    
+}
+
+.grid-item1 {
+    /* border: solid blue; */
+    margin-bottom: 20px;
+    width: 50%;
+    float: left;
+    font-size: 20px;
+}
+
+.grid-item2 {
+    /* border: solid red; */
+    float: right;
+}
+
+
+
+@media all and (max-width : 1350px) {
     .hamburger {
         display: block;
     }
@@ -148,13 +196,24 @@ button:hover {
         width: 100%;
     }
 
-    .first-page {
+    .first-page-about-us {
         width: 100%;
         font-size: 1.5vw;
     }
+
+    .second-page-about-us {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+
+    .grid-item1 {
+        width: 100%;
+    }
+    
 }
 
-@media screen and (max-width : 430px) {
+@media all and (max-width : 450px) {
     .nav-branding  {
         font-size: 5vw;
     }
@@ -163,7 +222,7 @@ button:hover {
         padding: 6px;
     }
 
-    .first-page {
+    .first-page-about-us {
         padding: 10px;
         margin-top: 50%;
         margin-bottom: 50%;
@@ -171,8 +230,27 @@ button:hover {
     }
 
     body {
-        background-position: center;
-        background-color: black;
+        background-position: top;
+        /* width: 100%; */
     }
+
+    .second-page-about-us {
+        width: 100%;
+    }
+
+    /* .grid-item1 {
+        width: 100%;
+        font-size: 1vw;
+    } */
+    
 }
+
+/* @media all and (max-width: 580px) {
+    .grid-item1 {
+        width: 100%;
+        font-size: 3vw;
+    }
+    
+} */
+
 
