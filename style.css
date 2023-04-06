@@ -143,7 +143,7 @@
 }
 
 .learn-more {
-    width: 10%;
+    width: fit-content;
     font-size: var(--THIRD-IMPORTANT-FONT);
     font-weight: var(--SECONDARY-IMPORTANT-SIZE);
     color: var(--COLOR-WHITE);
