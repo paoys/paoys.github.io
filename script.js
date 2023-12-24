@@ -1,13 +1,11 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".navbar__nav_menu");
+const card = document.querySelector('.card');
+    const backgroundMusic = document.getElementById('backgroundMusic');
 
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-})
-
-document.querySelectorAll(".nav-link").forEach(n => n.
-addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}))
+    card.addEventListener('click', function() {
+        card.classList.toggle('open');
+        if (card.classList.contains('open')) {
+            backgroundMusic.play();
+        } else {
+            backgroundMusic.pause();
+        }
+    });
